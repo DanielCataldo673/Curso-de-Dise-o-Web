@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad numero 4 - HTML Formularios</title>
+</head>
+
+<body>
+    <h2>Formulario de contacto</h2>
+    <form action="mailto:danielcataldo673@gmail.com?subjet=Mensaje desde sitio web" method="post" enctype="text/plain">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input name="nombre" id="nombre" type="text" required maxlength="20" minlength="3"
+                placeholder="Ingrese aqui su nombre" required>
+        </div>
+        <br>
+        <div>
+            <label for="nombre_empresa">Nombre Empresa:</label>
+            <input name="nombre_empresa" id="nombre_empresa" type="text" required maxlength="20" minlength="3"
+                placeholder="Ingrese aqui su empresa" required>
+        </div>
+        <br>
+        <div>
+            <label for="correo">Correo</label>
+            <input name="correo" id="correo" type="email" placeholder="Ingrese aqui su correo" required>
+        </div>
+        <br>
+        <div>
+            <label for="mensaje">Deje aqui su comentario</label> <br>
+            <textarea name="mensaje" id="mensaje" cols="51" rows="5" required></textarea>
+        </div>
+        <select name="color" id="color" required>
+            <option value="" hidden>seleccione un color</option>
+            <option value="azul">Azul</option>
+            <option value="rojo">Rojo</option>
+            <option value="verde">Verde</option>
+        </select>
+        </div>
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <hr>
+    <h2>Regristrate</h2>
+    <h4>Es rápido y fácil.</h4>
+    
+        <form action="mailto:danielcataldo673@gmail.com?subjet=Mensaje desde sitio web" method="post"
+            enctype="text/plain">
+            <input name="nombre" id="nombre" type="text" required maxlength="20" minlength="3"
+                placeholder="Ingrese aqui su nombre" required>
+            <input name="apellidos" id="apellidos" type="text" required maxlength="20" minlength="3"
+                placeholder="Apellidos">
+            <br><br>
+            <input name="correo" id="correo" type="email" placeholder="Correo Electronico">
+            <br><br>
+            <input name="contraseña" id="contraseña" type="password" placeholder="Contraseña">
+            <br> <br>
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <br>
+            <input name="nacimiento" id="nacimiento" type="date" style="width: 138px;">
+    <br>
+    <label for="">Genero</label>
+    <div>
+        <span>Mujer</span> <input type="radio" name="genero">
+        <span>Hombre</span> <input type="radio" name="genero">
+        <span>Otro</span> <input type="radio" name="genero">
+    </div>
+    <br>
+    <input type="submit" value="Regístrate">
+
+    </form>
+</body>
+
+</html>
